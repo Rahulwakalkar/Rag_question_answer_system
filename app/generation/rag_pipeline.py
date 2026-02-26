@@ -29,19 +29,19 @@ Answer:
 
     def rag_pipeline(question: str):
 
-        # Step 1: Retrieve relevant documents
+        
         docs = retriever.invoke(question)
 
-        # Step 2: Combine context
+        
         context = "\n\n".join(doc.page_content for doc in docs)
 
-        # Step 3: Format prompt
+        
         final_prompt = prompt.format(
             context=context,
             question=question
         )
 
-        # Step 4: Generate response
+       
         response = llm.invoke(final_prompt)
 
         return {
