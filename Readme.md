@@ -44,7 +44,7 @@ Groq LLM (LLaMA3)
      ↓
 Grounded Answer + Source Pages
 
-
+# project strucure
 swiggy_report_card/
 │
 ├── app/
