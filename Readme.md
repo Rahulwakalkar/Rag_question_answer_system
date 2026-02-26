@@ -45,6 +45,27 @@ Groq LLM (LLaMA3)
 Grounded Answer + Source Pages
 
 
+swiggy_report_card/
+│
+├── app/
+│   ├── main.py
+│   ├── ui.py
+│   ├── api.py
+│   ├── config.py
+│   │
+│   ├── ingestion/
+│   ├── retrieval/
+│   ├── generation/
+│   └── utils/
+│
+├── data/
+│   └── swiggy_annual_report.pdf
+│
+├── vector_store/
+├── requirements.txt
+└── README.md
+
+
 ### Environment Variable in .env file 
 GROQ_API_KEY=your_groq_api_key
 
